@@ -33,6 +33,7 @@
 
 - (id) initWithTransport:(id <TTransport>)transport
 {
+    self = [super init];
     mTransport = [transport retain_stub];
     readBuffer = nil;
     readOffset = 0;
